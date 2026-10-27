@@ -1,25 +1,51 @@
 <!DOCTYPE html>
+<!--
+  Pankaj Israni — personal portfolio.
+  Single-file static site. Open index.html in any browser, or serve it from GitHub Pages.
+  Third-party libraries (loaded from CDN, pinned versions): GSAP + ScrollTrigger 3.12.5, Lenis 1.1.13.
+  Fonts: Fraunces and Hanken Grotesk via Google Fonts.
+-->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Pankaj Israni — Mobile and web developer for hire</title>
-<meta name="description" content="Pankaj Israni designs and builds animated, store-ready mobile apps and web products for clients worldwide.">
+<title>Pankaj Israni — App and Website Developer in Jodhpur, India</title>
+<meta name="description" content="Pankaj Israni is an app and website developer in Jodhpur, India, building iPhone, Android and web products for founders and teams worldwide.">
+<meta name="theme-color" content="#060607">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Pankaj Israni">
+<meta property="og:site_name" content="Pankaj Israni">
+<meta property="og:locale" content="en_US">
+<link rel="canonical" href="https://1-pankaj.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://1-pankaj.github.io/">
+<meta property="og:title" content="Pankaj Israni — App and Website Developer in Jodhpur, India">
+<meta property="og:description" content="iPhone, Android and web products for founders and teams worldwide. Based in Jodhpur, India.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Pankaj Israni — App and Website Developer in Jodhpur, India">
+<meta name="twitter:description" content="iPhone, Android and web products for founders and teams worldwide. Based in Jodhpur, India.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23060607'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='40' text-anchor='middle' fill='%23d4bf9c'%3EP%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://1-pankaj.github.io/#site","url":"https://1-pankaj.github.io/","name":"Pankaj Israni","inLanguage":"en"},{"@type":"Person","@id":"https://1-pankaj.github.io/#me","name":"Pankaj Israni","url":"https://1-pankaj.github.io/","jobTitle":"App and website developer","description":"App and website developer in Jodhpur, India, building iPhone, Android and web products for founders and teams worldwide.","email":"mailto:pankajisrani17@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Jodhpur","addressCountry":"IN"},"worksFor":{"@type":"Organization","name":"Codeloom"},"knowsAbout":["Mobile app development","Website development","React Native","Kotlin","Next.js"],"sameAs":["https://github.com/1-Pankaj","https://www.linkedin.com/in/pankaj-israni-a94708222/","https://instagram.com/idkpankaj"]}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Hanken+Grotesk:wght@300..500&display=swap" rel="stylesheet">
+<noscript><style>.ld,.cur,.sc{display:none!important}</style></noscript>
 <style>
 :root{--ink:#060607;--bone:#ece8e1;--ash:#aca89f;--line:rgba(236,232,225,.2);--gold:#d4bf9c;--serif:"Fraunces","Georgia","Times New Roman",serif;--sans:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif;--pad:clamp(20px,4vw,64px);--r:clamp(24px,4vw,64px);color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-html{scroll-padding-top:env(safe-area-inset-top,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);overflow-x:clip}
 *,*::before,*::after{box-sizing:inherit;margin:0;padding:0}
 html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}
 body{background:var(--ink);color:var(--bone);font:400 clamp(15px,1.1vw,18px)/1.6 var(--sans);overflow-x:hidden;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
 :focus-visible{outline:2px solid var(--gold);outline-offset:6px}
+[tabindex="-1"]:focus{outline:none}
 ::selection{background:var(--gold);color:var(--ink)}
 body::after{content:"";position:fixed;inset:-50%;z-index:80;pointer-events:none;opacity:.06;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2'/></filter><rect width='200' height='200' filter='url(%23n)'/></svg>");animation:gr 1s steps(6) infinite}
 @keyframes gr{0%{transform:translate(0,0)}20%{transform:translate(-3%,2%)}40%{transform:translate(2%,-4%)}60%{transform:translate(-4%,-1%)}80%{transform:translate(3%,3%)}100%{transform:translate(0,0)}}
 .serif{font-family:var(--serif);font-weight:380;letter-spacing:-.03em}
+.pg{position:fixed;left:0;top:0;width:100%;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;z-index:75;pointer-events:none}
+.eb{display:block;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:clamp(18px,2vw,30px)}
+.lt .eb{color:#8f3a1c}
 .nav{position:fixed;inset:0 0 auto;z-index:70;display:flex;justify-content:space-between;align-items:center;padding:calc(env(safe-area-inset-top,0px) + 22px) var(--pad) 0;mix-blend-mode:difference;color:#fff;font-size:15px}
 .nav ul{display:flex;gap:clamp(16px,3vw,44px);list-style:none;align-items:center}
 .nav .t{opacity:.65;font-variant-numeric:tabular-nums}
@@ -51,6 +77,9 @@ section{position:relative;padding:clamp(90px,14vw,220px) var(--pad)}
 .sp{display:inline-block;width:.24em}
 .st{font-size:clamp(28px,4.6vw,78px);line-height:1.12;max-width:22em}
 .st .w{opacity:.2}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:clamp(50px,7vw,110px);padding-top:28px;border-top:1px solid var(--line)}
+.stats b{display:block;font-size:clamp(48px,6.4vw,112px);line-height:1;font-weight:380;font-variant-numeric:tabular-nums}
+.stats span{display:block;margin-top:10px;color:var(--ash);font-size:14px;max-width:20ch}
 /* light work section */
 .lt{--line:rgba(6,6,7,.22);--ash:#4f4c46;--fg:var(--bone);background:var(--bone);color:var(--ink);border-radius:var(--r);margin-top:calc(var(--r)*-1);z-index:2;padding-top:clamp(70px,9vw,140px)}
 .wkh{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:clamp(40px,6vw,90px)}
@@ -60,8 +89,8 @@ section{position:relative;padding:clamp(90px,14vw,220px) var(--pad)}
 .feat ul{list-style:none;display:grid;gap:18px;color:var(--ash)}
 .feat li{padding-bottom:18px;border-bottom:1px solid var(--line)}
 .feat li b{font-weight:500;color:var(--ink)}
-.rows{margin:0 calc(var(--pad)*-1)}
-.row{--l:0;--c:var(--bone);--fg:var(--ink);position:relative;isolation:isolate;overflow:hidden;display:grid;grid-template-columns:1.6fr 1.3fr .8fr;gap:24px;align-items:center;padding:clamp(24px,3.2vw,48px) var(--pad)}
+.rows{margin:0 calc(var(--pad)*-1);counter-reset:r}
+.row{--l:0;--c:var(--bone);--fg:var(--ink);counter-increment:r;position:relative;isolation:isolate;overflow:hidden;display:grid;grid-template-columns:1.6fr 1.3fr .8fr;gap:24px;align-items:center;padding:clamp(24px,3.2vw,48px) var(--pad)}
 .lt .row{--fg:var(--bone)}
 .row::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--c);transform:scaleY(0);transform-origin:bottom;transition:transform .7s cubic-bezier(.7,0,.2,1)}
 .row::after{content:"";position:absolute;left:var(--pad);right:var(--pad);bottom:0;height:1px;background:var(--line);transform:scaleX(var(--l));transform-origin:left}
@@ -69,9 +98,21 @@ section{position:relative;padding:clamp(90px,14vw,220px) var(--pad)}
 .row .n,.row .d,.row .k{transition:color .5s,transform .7s cubic-bezier(.2,.8,.2,1)}
 .row:hover .n,.row:hover .d,.row:hover .k{color:var(--fg)}
 .row .n{font-size:clamp(32px,5.2vw,92px);line-height:1}
+.row .n::before{content:counter(r,decimal-leading-zero);font:400 13px/1 var(--sans);letter-spacing:.1em;margin-right:1.2em;vertical-align:1.1em;opacity:.5}
 .row:hover .n{transform:translateX(clamp(10px,2vw,32px))}
 .row .d{color:var(--ash);max-width:38ch}
 .row .k{text-align:right;color:var(--ash);font-size:14px}
+.ah{display:flex;justify-content:space-between;align-items:flex-start;gap:30px}
+.ab{max-width:18ch;font-size:clamp(40px,6.4vw,112px)}
+.kw{display:inline-block;white-space:nowrap}.kc{display:inline-block;will-change:transform}
+.ap{max-width:46ch;margin-top:clamp(24px,3vw,44px);font-size:clamp(17px,1.5vw,24px);color:var(--ash)}
+.bd{flex:none;width:clamp(110px,14vw,200px);fill:var(--gold);font-family:var(--sans);font-weight:500;letter-spacing:.1em}
+.who{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,28px);margin-top:clamp(50px,7vw,110px);perspective:1200px}
+.wc{--mx:50%;--my:50%;--a:0;position:relative;isolation:isolate;min-height:260px;padding:clamp(26px,3vw,44px);border-radius:24px;background:radial-gradient(circle at var(--mx) var(--my),rgba(212,191,156,.2),transparent 55%),#0e0e10;will-change:transform}
+.wc::before{content:"";position:absolute;inset:0;z-index:-1;border-radius:inherit;padding:1px;background:conic-gradient(from calc(var(--a)*1deg),transparent 0 70%,var(--gold) 90%,transparent);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
+.wc h3{font-size:clamp(28px,2.6vw,44px);line-height:1;margin-bottom:14px;color:var(--gold)}
+.wc p{color:var(--ash)}
+.row.on::before{transform:scaleY(1)}.row.on .n,.row.on .d,.row.on .k{color:var(--fg)}
 /* services */
 .cr h2{margin-bottom:clamp(40px,6vw,90px)}
 .mq{overflow:hidden;padding:clamp(30px,5vw,80px) 0;white-space:nowrap;border-block:1px solid var(--line)}
@@ -86,23 +127,35 @@ section{position:relative;padding:clamp(90px,14vw,220px) var(--pad)}
 .pr .co{font-size:clamp(28px,3.4vw,56px);line-height:1}
 .pr p{color:var(--ash);max-width:40ch}
 .pt{margin-top:clamp(40px,6vw,90px)}
+/* questions */
+.fq .pt{max-width:1100px}
+.fq details{border-top:1px solid var(--line)}
+.fq details:last-child{border-bottom:1px solid var(--line)}
+.fq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:26px 0;font-size:clamp(22px,2.8vw,44px);line-height:1.1}
+.fq summary::-webkit-details-marker{display:none}
+.fq summary::after{content:"+";flex:none;font:300 1.3em/1 var(--sans);color:var(--gold);transition:transform .5s cubic-bezier(.7,0,.2,1)}
+.fq details[open] summary::after{transform:rotate(45deg)}
+.fq details p{color:var(--ash);max-width:56ch;padding:0 0 30px;animation:fi .6s cubic-bezier(.2,.8,.2,1)}
+@keyframes fi{from{opacity:0;transform:translateY(-10px)}}
 /* contact */
 .ct{min-height:100svh;display:flex;flex-direction:column;justify-content:space-between;gap:80px}
 .ct .h2{max-width:11ch;font-size:clamp(48px,10.5vw,190px)}
-.em{display:inline-block;font-size:clamp(24px,4.4vw,76px);position:relative;padding-bottom:.12em}
+.em{display:inline-block;font-size:clamp(24px,4.4vw,76px);position:relative;padding-bottom:.12em;max-width:100%;overflow-wrap:anywhere}
 .em::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--bone);transform-origin:right;transition:transform .8s cubic-bezier(.7,0,.2,1)}
 .em:hover::after{transform:scaleX(0)}
 .ft{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;border-top:1px solid var(--line);padding-top:22px;color:var(--ash);font-size:15px}
-.ft nav{display:flex;gap:28px;color:var(--bone)}
+.ft nav{display:flex;flex-wrap:wrap;gap:12px 28px;color:var(--bone)}
 .cur{position:fixed;left:0;top:0;width:16px;height:16px;margin:-8px 0 0 -8px;border-radius:50%;background:#fff;mix-blend-mode:difference;pointer-events:none;z-index:99}
 @media (hover:none){.cur{display:none}}
-@media (max-width:800px){.nav .t,.sc{display:none}.feat,.pr{grid-template-columns:1fr}.row{grid-template-columns:1fr;gap:8px}.row .k{text-align:left}.wkh,.hf{flex-direction:column;align-items:flex-start}.hf .r{text-align:left}.ln:nth-child(2){padding-left:12vw}.cta{bottom:auto;top:96px}}
-@media (prefers-reduced-motion:reduce){body::after,.sc::after{animation:none}}
+@media (max-width:800px){.nav .t,.sc{display:none}.feat,.pr{grid-template-columns:1fr}.row{grid-template-columns:1fr;gap:8px}.row .k{text-align:left}.wkh,.hf{flex-direction:column;align-items:flex-start}.hf .r{text-align:left}.ln:nth-child(2){padding-left:12vw}.cta{bottom:auto;top:96px}.stats{grid-template-columns:1fr 1fr;row-gap:36px}.who{grid-template-columns:1fr}.nav a{padding:8px 0}.ah{flex-direction:column}}
+@media (max-width:560px){.nav{font-size:13px}.nav>a{font-size:18px!important}.nav ul{gap:12px}.nav li:nth-child(4){display:none}}
+@media (prefers-reduced-motion:reduce){body::after,.sc::after,.fq details p{animation:none}}
 </style>
 </head>
 <body>
-<div class="cur"></div>
-<div class="ld"><div class="serif" style="font-size:clamp(18px,2vw,28px)">Pankaj Israni</div><div class="ldn serif">0</div></div>
+<div class="cur" aria-hidden="true"></div>
+<div class="pg" aria-hidden="true"></div>
+<div class="ld" aria-hidden="true"><div class="serif" style="font-size:clamp(18px,2vw,28px)">Pankaj Israni</div><div class="ldn serif">0</div></div>
 
 <header class="nav">
   <a href="#top" class="serif" style="font-size:21px">Pankaj Israni</a>
@@ -111,10 +164,10 @@ section{position:relative;padding:clamp(90px,14vw,220px) var(--pad)}
 
 <main id="top">
 <section class="hero" style="padding-top:0">
-  <canvas id="flow"></canvas>
+  <canvas id="flow" aria-hidden="true"></canvas>
   <div class="sc"></div>
   <a class="cta mag" href="#contact">Start a<br>project</a>
-  <h1 class="name serif"><span class="ln" data-s>Pankaj</span><span class="ln" data-s>Israni</span></h1>
+  <h1 class="name serif" aria-label="Pankaj Israni, app and website developer in Jodhpur, India"><span class="ln" data-s>Pankaj</span> <span class="ln" data-s>Israni</span></h1>
   <div class="hf">
     <p>I design and build mobile apps and web products for founders and teams.</p>
     <div class="r">Based in Jodhpur <span id="t2"></span><br>Working with clients worldwide</div>
@@ -123,55 +176,101 @@ section{position:relative;padding:clamp(90px,14vw,220px) var(--pad)}
 
 <section style="padding-bottom:calc(clamp(90px,14vw,220px) + var(--r))">
   <p class="st serif" id="st">Apps people enjoy opening: fluid motion, subscriptions that work, and launches that reach the App Store and Google Play. I’ve shipped products for companies, classrooms and my own studio, Codeloom.</p>
+  <div class="stats">
+    <div><b class="serif" data-n="7">7</b><span>Products designed and built</span></div>
+    <div><b class="serif" data-n="2">2</b><span>Stores: App Store and Google Play</span></div>
+    <div><b class="serif" data-n="3">3</b><span>Open-source projects on GitHub</span></div>
+    <div><b class="serif" data-n="1">1</b><span>Studio of my own, Codeloom</span></div>
+  </div>
 </section>
 
 <section class="lt" id="work">
+  <span class="eb">01 / Work</span>
   <div class="wkh"><h2 class="h2 serif" data-w>Selected work</h2><p>Apps and products I’ve built and shipped. Hover a row, click to open.</p></div>
   <div class="feat">
     <h3 class="serif" data-w>MyCalTrack, a health app that talks back</h3>
     <ul>
       <li><b>Apple Health sync</b><br>Steps and activity tracked in the background, tuned so the battery barely notices.</li>
       <li><b>AI Metabolism Coach and Food Taste Visualizer</b><br>Recommendations and nudges shaped by what a person eats and how they move.</li>
-      <li><b>Social Hub, Game Hub and subscriptions</b><br>Challenges, gamification and RevenueCat billing, shipped to both stores with Expo and EAS.</li>
+      <li><b>Social Hub, Game Hub and subscriptions</b><br>Challenges, game-style rewards and paid plans, published on both the App Store and Google Play.</li>
     </ul>
   </div>
   <div class="rows">
-    <a class="row" style="--c:#8f3a1c" href="https://apps.apple.com/in/app/mycaltrack/id6772485451" target="_blank" rel="noopener"><div class="n serif">MyCalTrack</div><div class="d">Health and fitness app with an AI metabolism coach, Apple Health sync and a game hub.</div><div class="k">React Native, TypeScript, RevenueCat</div></a>
-    <a class="row" style="--c:#1f3b57" href="https://nexbuilder.in" target="_blank" rel="noopener"><div class="n serif">NexBuilder</div><div class="d">Describe a website in plain words and watch the platform build it.</div><div class="k">Next.js, React, TypeScript</div></a>
-    <div class="row" style="--c:#4a2a5a"><div class="n serif">TechPiFurious</div><div class="d">A gamified classroom where students and teachers meet in one app.</div><div class="k">React Native</div></div>
-    <a class="row" style="--c:#1f4a44" href="https://play.google.com/store/apps/details?id=com.edusangam.app" target="_blank" rel="noopener"><div class="n serif">Sharda EduSangam</div><div class="d">One Android app connecting students, parents, teachers and tutors.</div><div class="k">Kotlin, Firebase</div></a>
-    <a class="row" style="--c:#2a2a30" href="https://github.com/1-Pankaj/Formative" target="_blank" rel="noopener"><div class="n serif">Formative</div><div class="d">Open-source desktop workspace for architecture diagrams and agent orchestration.</div><div class="k">TypeScript</div></a>
-    <a class="row" style="--c:#3a4a1f" href="https://github.com/1-Pankaj/Devlofy" target="_blank" rel="noopener"><div class="n serif">Devlofy</div><div class="d">Offline-first command center for solo developers, with a 3D focus garden.</div><div class="k">TypeScript, SQLite</div></a>
-    <a class="row" style="--c:#6b2a24" href="https://github.com/1-Pankaj/Pixel-Pals" target="_blank" rel="noopener"><div class="n serif">Pixel-Pals</div><div class="d">A pixel companion that lives on top of your windows and follows your cursor.</div><div class="k">JavaScript</div></a>
+    <a class="row" style="--c:#8f3a1c" href="https://apps.apple.com/in/app/mycaltrack/id6772485451" target="_blank" rel="noopener noreferrer"><h3 class="n serif">MyCalTrack</h3><div class="d">Health and fitness app with an AI metabolism coach, Apple Health sync and a game hub.</div><div class="k">React Native, TypeScript, RevenueCat</div></a>
+    <a class="row" style="--c:#1f3b57" href="https://nexbuilder.in" target="_blank" rel="noopener noreferrer"><h3 class="n serif">NexBuilder</h3><div class="d">Describe a website in plain words and watch the platform build it.</div><div class="k">Next.js, React, TypeScript</div></a>
+    <div class="row" style="--c:#4a2a5a"><h3 class="n serif">TechPiFurious</h3><div class="d">A gamified classroom where students and teachers meet in one app.</div><div class="k">React Native</div></div>
+    <a class="row" style="--c:#1f4a44" href="https://play.google.com/store/apps/details?id=com.edusangam.app" target="_blank" rel="noopener noreferrer"><h3 class="n serif">Sharda EduSangam</h3><div class="d">One Android app connecting students, parents, teachers and tutors.</div><div class="k">Kotlin, Firebase</div></a>
+    <a class="row" style="--c:#2a2a30" href="https://github.com/1-Pankaj/Formative" target="_blank" rel="noopener noreferrer"><h3 class="n serif">Formative</h3><div class="d">Open-source desktop workspace for architecture diagrams and agent orchestration.</div><div class="k">TypeScript</div></a>
+    <a class="row" style="--c:#3a4a1f" href="https://github.com/1-Pankaj/Devlofy" target="_blank" rel="noopener noreferrer"><h3 class="n serif">Devlofy</h3><div class="d">Offline-first command center for solo developers, with a 3D focus garden.</div><div class="k">TypeScript, SQLite</div></a>
+    <a class="row" style="--c:#6b2a24" href="https://github.com/1-Pankaj/Pixel-Pals" target="_blank" rel="noopener noreferrer"><h3 class="n serif">Pixel-Pals</h3><div class="d">A pixel companion that lives on top of your windows and follows your cursor.</div><div class="k">JavaScript</div></a>
   </div>
 </section>
 
 <section class="cr" id="services" style="padding-bottom:0">
+  <span class="eb">02 / Services</span>
   <h2 class="h2 serif" data-w>What I build for clients</h2>
   <div class="rows">
-    <div class="row"><div class="n serif">Mobile apps</div><div class="d">iOS and Android apps with real motion, push, deep links and in-app subscriptions.</div><div class="k">React Native, Kotlin, Reanimated</div></div>
-    <div class="row"><div class="n serif">Web products</div><div class="d">Fast websites and web apps, including AI tools that turn a prompt into a result.</div><div class="k">Next.js, Node.js, PHP</div></div>
-    <div class="row"><div class="n serif">Backend and launch</div><div class="d">APIs, databases, billing, app signing and store release, handled end to end.</div><div class="k">Firebase, RevenueCat, Expo EAS</div></div>
+    <div class="row"><h3 class="n serif">Mobile apps</h3><div class="d">iPhone and Android apps that move smoothly, send notifications, open the right screen from a link and offer paid subscriptions.</div><div class="k">React Native, Kotlin, Reanimated</div></div>
+    <div class="row"><h3 class="n serif">Web products</h3><div class="d">Fast websites and web apps, including tools that turn a short written request into a finished result.</div><div class="k">Next.js, Node.js, PHP</div></div>
+    <div class="row"><h3 class="n serif">Backend and launch</h3><div class="d">Everything behind the screen: data storage, payments and getting your app approved and published in the stores, handled end to end.</div><div class="k">Firebase, RevenueCat, Expo EAS</div></div>
+    <div class="row"><h3 class="n serif">Design and motion</h3><div class="d">Interface design, working prototypes and animation that makes an app feel alive.</div><div class="k">Prototyping, Reanimated</div></div>
   </div>
 </section>
-<div class="mq" style="margin-top:clamp(60px,8vw,120px)"><div class="tr" id="m1"><span class="serif">React Native</span><span class="serif o">TypeScript</span><span class="serif">Kotlin</span><span class="serif o">Reanimated</span><span class="serif">Next.js</span><span class="serif o">Firebase</span><span class="serif">RevenueCat</span><span class="serif o">Expo EAS</span><span class="serif">React Native</span><span class="serif o">TypeScript</span><span class="serif">Kotlin</span><span class="serif o">Reanimated</span><span class="serif">Next.js</span><span class="serif o">Firebase</span><span class="serif">RevenueCat</span><span class="serif o">Expo EAS</span></div></div>
+<div class="mq" aria-hidden="true" style="margin-top:clamp(60px,8vw,120px)"><div class="tr" id="m1"><span class="serif">React Native</span><span class="serif o">TypeScript</span><span class="serif">Kotlin</span><span class="serif o">Reanimated</span><span class="serif">Next.js</span><span class="serif o">Firebase</span><span class="serif">RevenueCat</span><span class="serif o">Expo EAS</span><span class="serif">React Native</span><span class="serif o">TypeScript</span><span class="serif">Kotlin</span><span class="serif o">Reanimated</span><span class="serif">Next.js</span><span class="serif o">Firebase</span><span class="serif">RevenueCat</span><span class="serif o">Expo EAS</span></div></div>
 
-<section id="process">
+<section id="about" style="overflow-x:clip">
+  <span class="eb">03 / About</span>
+  <div class="ah"><h2 class="h2 serif ab" data-k>Hi, I’m Pankaj. I build apps people enjoy.</h2>
+  <svg class="bd" viewBox="0 0 200 200" aria-hidden="true"><defs><path id="cp" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"/></defs><text font-size="11"><textPath href="#cp" textLength="498" lengthAdjust="spacing">JODHPUR, INDIA · CODELOOM · APP STORE · GOOGLE PLAY · </textPath></text></svg></div>
+  <p class="ap">I’m an app and website developer based in Jodhpur, India. Through my own studio, Codeloom, I work with founders and teams around the world, and I stay with a project from the first call to the App Store and Google Play.</p>
+  <div class="who">
+    <article class="wc"><h3 class="serif">Founders</h3><p>Turn an idea into an app or website people can use, from the first call to the store.</p></article>
+    <article class="wc"><h3 class="serif">Teams and companies</h3><p>Add a polished mobile app or web product to what you already offer.</p></article>
+    <article class="wc"><h3 class="serif">Schools and classrooms</h3><p>Apps that bring students, parents and teachers together, like Sharda EduSangam and TechPiFurious.</p></article>
+  </div>
+</section>
+
+<section id="approach" style="padding-top:0">
+  <span class="eb">04 / Approach</span>
+  <h2 class="h2 serif" data-w>How I work</h2>
+  <div class="pt">
+    <div class="pr"><div class="y serif">01</div><h3 class="co serif">Fluid motion</h3><p>Screens move smoothly, and the animation helps people understand what is happening.</p></div>
+    <div class="pr"><div class="y serif">02</div><h3 class="co serif">Subscriptions that work</h3><p>Paid plans are set up so people can subscribe without trouble.</p></div>
+    <div class="pr"><div class="y serif">03</div><h3 class="co serif">Launches that reach the stores</h3><p>I take the app all the way to the App Store and Google Play, not just to a finished build.</p></div>
+  </div>
+</section>
+
+<section id="process" style="padding-top:0">
+  <span class="eb">05 / Process</span>
   <h2 class="h2 serif" data-w>From idea to the store</h2>
   <div class="pt">
-    <div class="pr"><div class="y serif">1</div><div class="co serif">Discovery</div><p>A short call to pin down the goal, the users and the deadline.</p></div>
-    <div class="pr"><div class="y serif">2</div><div class="co serif">Design and prototype</div><p>Motion-rich screens and a working prototype before the full build.</p></div>
-    <div class="pr"><div class="y serif">3</div><div class="co serif">Build</div><p>React Native or native Android, with a backend that fits the product.</p></div>
-    <div class="pr"><div class="y serif">4</div><div class="co serif">Launch and support</div><p>Store submission, signing, subscriptions, and fixes after release.</p></div>
+    <div class="pr"><div class="y serif">1</div><h3 class="co serif">Discovery</h3><p>A short call to pin down the goal, the users and the deadline.</p></div>
+    <div class="pr"><div class="y serif">2</div><h3 class="co serif">Design and prototype</h3><p>Screens with smooth motion and a working prototype you can try before the full build.</p></div>
+    <div class="pr"><div class="y serif">3</div><h3 class="co serif">Build</h3><p>The app is built for iPhone and Android, or Android only, with the behind-the-scenes setup it needs.</p></div>
+    <div class="pr"><div class="y serif">4</div><h3 class="co serif">Launch and support</h3><p>Publishing on the App Store and Google Play, setting up paid plans, and fixing issues after release.</p></div>
   </div>
 </section>
 
+<section class="fq" id="faq" style="padding-top:0">
+  <span class="eb">06 / Questions</span>
+  <h2 class="h2 serif" data-w>Common questions</h2>
+  <div class="pt">
+    <details><summary class="serif">Who do you build apps and websites for?</summary><p>For founders, teams and companies, and for classrooms. I have also built products for my own studio, Codeloom.</p></details>
+    <details><summary class="serif">Do you build for both iPhone and Android?</summary><p>Yes. I build iPhone and Android apps, and some projects are Android only.</p></details>
+    <details><summary class="serif">Will you publish the app on the App Store and Google Play?</summary><p>Yes. Publishing on the stores is part of the last step, along with paid plans and fixes after release.</p></details>
+    <details><summary class="serif">Which tools do you use?</summary><p>For apps, mostly React Native and Kotlin. For websites, Next.js and Node.js. Firebase stores app data and RevenueCat handles paid subscriptions.</p></details>
+    <details><summary class="serif">How long will my project take?</summary><p>It depends on your goal and your deadline. The first step is a short call to work that out together.</p></details>
+    <details><summary class="serif">Where are you based, and how do we start?</summary><p>I’m in Jodhpur, India, and I work with clients worldwide. Email me your goal and timeline and I’ll reply with the best way to get there.</p></details>
+  </div>
+</section>
+<div class="mq" aria-hidden="true"><div class="tr" id="m2"><span class="serif">App Store</span><span class="serif o">Google Play</span><span class="serif">Apple Health</span><span class="serif o">Open source</span><span class="serif">Codeloom</span><span class="serif">App Store</span><span class="serif o">Google Play</span><span class="serif">Apple Health</span><span class="serif o">Open source</span><span class="serif">Codeloom</span></div></div>
+
 <section class="ct" id="contact">
-  <div><h2 class="h2 serif" data-w>Have a project in mind? Let’s build it.</h2></div>
+  <div><span class="eb">07 / Contact</span><h2 class="h2 serif" data-w>Have a project in mind? Let’s build it.</h2></div>
   <div>
     <p style="color:var(--ash);margin-bottom:22px">Tell me the goal and the timeline. I’ll reply with the best way to get there.</p>
     <a class="em serif mag" href="mailto:pankajisrani17@gmail.com?subject=New%20project">pankajisrani17@gmail.com</a>
-    <div class="ft" style="margin-top:clamp(50px,8vw,120px)"><span>Jodhpur, India <span id="t3"></span>. Booking new projects.</span><nav><a href="https://github.com/1-Pankaj" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/pankaj-israni-a94708222/" target="_blank" rel="noopener">LinkedIn</a><a href="https://instagram.com/idkpankaj" target="_blank" rel="noopener">Instagram</a></nav></div>
+    <div class="ft" style="margin-top:clamp(50px,8vw,120px)"><span>Jodhpur, India <span id="t3"></span>. Booking new projects.<br>© <span id="yr">2026</span> Pankaj Israni</span><nav aria-label="Elsewhere"><a href="https://github.com/1-Pankaj" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/pankaj-israni-a94708222/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://instagram.com/idkpankaj" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://github.com/1-Pankaj/1-pankaj.github.io" target="_blank" rel="noopener noreferrer">Source</a><a href="#top">Back to top</a></nav></div>
   </div>
 </section>
 </main>
@@ -184,6 +283,7 @@ section{position:relative;padding:clamp(90px,14vw,220px) var(--pad)}
 var $=function(s,r){return(r||document).querySelector(s)},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
 var ld=$('.ld');
 function done(){ld&&ld.parentNode&&ld.remove();$$('.c').forEach(function(c){c.style.transform='none'});}
+$('#yr').textContent=new Date().getFullYear();
 if(!window.gsap||!window.ScrollTrigger){done();return;}
 setTimeout(function(){if($('.ld'))done()},9000);
 gsap.registerPlugin(ScrollTrigger);
@@ -195,10 +295,10 @@ tick();setInterval(tick,20000);
 
 var lenis=null;
 if(window.Lenis&&!reduce){lenis=new Lenis({lerp:.085,smoothWheel:true});lenis.on('scroll',ScrollTrigger.update);gsap.ticker.add(function(t){lenis.raf(t*1000)});gsap.ticker.lagSmoothing(0);lenis.stop();}
-$$('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var t=$(a.getAttribute('href'));if(!t)return;e.preventDefault();lenis?lenis.scrollTo(t,{duration:1.6,easing:function(x){return x<.5?16*x*x*x*x*x:1-Math.pow(-2*x+2,5)/2}}):t.scrollIntoView({behavior:'smooth'})})});
+$$('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var t=$(a.getAttribute('href'));if(!t)return;e.preventDefault();t.setAttribute('tabindex','-1');t.focus({preventScroll:true});lenis?lenis.scrollTo(t,{duration:1.6,easing:function(x){return x<.5?16*x*x*x*x*x:1-Math.pow(-2*x+2,5)/2}}):t.scrollIntoView({behavior:reduce?'auto':'smooth'})})});
 
-$$('[data-s]').forEach(function(el){el.innerHTML=el.textContent.split('').map(function(ch){return'<span class="c">'+ch+'</span>'}).join('')});
-$$('[data-w]').forEach(function(el){el.innerHTML=el.textContent.trim().split(/\s+/).map(function(w){return'<span class="wm"><span>'+w+'</span></span>'}).join('<span class="sp"></span>')});
+$$('[data-s]').forEach(function(el){el.setAttribute('aria-hidden','true');el.innerHTML=el.textContent.split('').map(function(ch){return'<span class="c">'+ch+'</span>'}).join('')});
+$$('[data-w]').forEach(function(el){var t=el.textContent.trim();el.setAttribute('aria-label',t);el.innerHTML=t.split(/\s+/).map(function(w){return'<span class="wm" aria-hidden="true"><span>'+w+'</span></span>'}).join('<span class="sp" aria-hidden="true"></span>')});
 var st=$('#st');st.innerHTML=st.textContent.trim().split(/\s+/).map(function(w){return'<span class="w">'+w+'</span>'}).join(' ');
 gsap.set('.c',{yPercent:115,rotate:6});
 
@@ -209,6 +309,7 @@ tl.to(o,{v:100,duration:2.2,ease:'power2.inOut',onUpdate:function(){n.textConten
   .to('.c',{yPercent:0,rotate:0,duration:1.5,ease:'expo.out',stagger:.07},'-=.55')
   .from('.nav,.hf,.sc,.cta',{opacity:0,y:20,duration:1.2,ease:'power3.out',stagger:.1},'-=1.1');
 
+gsap.to('.pg',{scaleX:1,ease:'none',scrollTrigger:{start:0,end:'max',scrub:.3}});
 gsap.to('.name',{yPercent:-22,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
 gsap.to('.ln:nth-child(2)',{xPercent:-8,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
 
@@ -221,9 +322,21 @@ $$('.row,.pr').forEach(function(r){gsap.to(r,{'--l':1,duration:1.4,ease:'expo.in
 $$('.feat li').forEach(function(li){gsap.from(li,{opacity:0,x:30,duration:1,ease:'power3.out',scrollTrigger:{trigger:li,start:'top 90%'}})});
 gsap.from('.lt',{y:80,ease:'none',scrollTrigger:{trigger:'.lt',start:'top bottom',end:'top 40%',scrub:true}});
 
-var t1=gsap.fromTo('#m1',{xPercent:0},{xPercent:-50,duration:42,ease:'none',repeat:-1}),boost=0;
+$$('.eb').forEach(function(e){gsap.from(e,{opacity:0,x:-24,duration:1,ease:'power3.out',scrollTrigger:{trigger:e,start:'top 92%'}})});
+$$('.stats b').forEach(function(b){var end=+b.dataset.n,c={v:0};gsap.from(b.parentNode,{opacity:0,y:40,duration:1.2,ease:'power3.out',scrollTrigger:{trigger:b,start:'top 92%'}});gsap.to(c,{v:end,duration:2,ease:'power2.out',onStart:function(){b.textContent='0'},onUpdate:function(){b.textContent=Math.round(c.v)},scrollTrigger:{trigger:b,start:'top 92%'}})});
+$$('.fq details').forEach(function(d){gsap.from(d,{opacity:0,y:30,duration:1,ease:'power3.out',scrollTrigger:{trigger:d,start:'top 94%'}});d.addEventListener('toggle',function(){ScrollTrigger.refresh()})});
+
+$$('[data-k]').forEach(function(el){var t=el.textContent.trim();el.setAttribute('aria-label',t);el.innerHTML=t.split(/\s+/).map(function(w){return'<span class="kw" aria-hidden="true">'+w.split('').map(function(c){return'<span class="kc">'+c+'</span>'}).join('')+'</span>'}).join(' ');
+if(!reduce)gsap.from($$('.kc',el),{x:function(){return gsap.utils.random(-500,500)},y:function(){return gsap.utils.random(-380,380)},rotation:function(){return gsap.utils.random(-220,220)},scale:function(){return gsap.utils.random(.2,3)},opacity:0,ease:'power3.out',stagger:{each:.012,from:'random'},scrollTrigger:{trigger:el,start:'top 92%',end:'top 38%',scrub:1}})});
+$$('.wc').forEach(function(c,i){gsap.to(c,{'--a':360,duration:7+i*1.5,ease:'none',repeat:-1});if(fine){c.addEventListener('mousemove',function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;c.style.setProperty('--mx',x*100+'%');c.style.setProperty('--my',y*100+'%');gsap.to(c,{rotateY:(x-.5)*16,rotateX:(.5-y)*16,duration:.5,ease:'power3.out'})});c.addEventListener('mouseleave',function(){gsap.to(c,{rotateX:0,rotateY:0,duration:1.1,ease:'elastic.out(1,.4)'})})}});
+gsap.from('.wc',{rotateX:-85,y:140,opacity:0,transformOrigin:'50% 100%',duration:1.5,ease:'expo.out',stagger:.16,scrollTrigger:{trigger:'.who',start:'top 88%'}});
+gsap.from('.bd',{scale:0,duration:1.6,ease:'elastic.out(1,.5)',scrollTrigger:{trigger:'.bd',start:'top 92%'}});
+if(!fine)$$('.row').forEach(function(r){ScrollTrigger.create({trigger:r,start:'top 62%',end:'bottom 38%',toggleClass:{targets:r,className:'on'}})});
+
+var t1=gsap.fromTo('#m1',{xPercent:0},{xPercent:-50,duration:42,ease:'none',repeat:-1}),t2=gsap.fromTo('#m2',{xPercent:-50},{xPercent:0,duration:52,ease:'none',repeat:-1}),boost=0;
+var rot=gsap.to('.bd',{rotation:360,duration:22,ease:'none',repeat:-1});if(reduce){t1.pause();t2.pause();rot.pause()}
 ScrollTrigger.create({start:0,end:'max',onUpdate:function(s){boost=Math.min(Math.abs(s.getVelocity())/180,8)}});
-gsap.ticker.add(function(){boost*=.93;t1.timeScale(1+boost)});
+gsap.ticker.add(function(){boost*=.93;t1.timeScale(1+boost);t2.timeScale(1+boost);rot.timeScale(1+boost)});
 if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){ScrollTrigger.refresh()});
 
 var cv=$('#flow'),cx=cv.getContext('2d'),W,H,P=[],mx=-1e4,my=-1e4,vis=true,time=0,dpr=Math.min(devicePixelRatio||1,2);
@@ -244,7 +357,7 @@ p.x=nx;p.y=ny;if(--p.l<0||p.x<0||p.x>W||p.y<0||p.y>H)spawn(p)}})();
 if(fine){
 var cur=$('.cur'),cqx=gsap.quickTo(cur,'x',{duration:.25,ease:'power3'}),cqy=gsap.quickTo(cur,'y',{duration:.25,ease:'power3'});
 addEventListener('mousemove',function(e){cqx(e.clientX);cqy(e.clientY)});
-$$('a').forEach(function(a){a.addEventListener('mouseenter',function(){gsap.to(cur,{scale:a.classList.contains('row')?1.6:2.4,duration:.3})});a.addEventListener('mouseleave',function(){gsap.to(cur,{scale:1,duration:.3})})});
+$$('a,summary').forEach(function(a){a.addEventListener('mouseenter',function(){gsap.to(cur,{scale:a.classList.contains('row')?1.6:2.4,duration:.3})});a.addEventListener('mouseleave',function(){gsap.to(cur,{scale:1,duration:.3})})});
 $$('.mag').forEach(function(m){m.addEventListener('mousemove',function(e){var r=m.getBoundingClientRect();gsap.to(m,{x:(e.clientX-r.left-r.width/2)*.18,y:(e.clientY-r.top-r.height/2)*.25,duration:.5,ease:'power3.out'})});m.addEventListener('mouseleave',function(){gsap.to(m,{x:0,y:0,duration:1,ease:'elastic.out(1,.4)'})})});
 }
 })();
