@@ -1,0 +1,10 @@
+/* TEAM */
+Developer: Pankaj Israni
+Site: https://1-pankaj.github.io
+Location: Jodhpur, India
+
+/* SITE */
+Last update: 2026/10/28
+Standards: HTML5, CSS3, JavaScript
+Components: GSAP, ScrollTrigger, Lenis
+Fonts: Fraunces, Hanken Grotesk

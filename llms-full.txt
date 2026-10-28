@@ -1,0 +1,72 @@
+# Pankaj Israni
+
+> Pankaj Israni is a freelance app and website developer based in Jodhpur, India, available to hire for new projects worldwide. Pankaj builds iPhone, Android and web products for founders and teams, and runs a studio called Codeloom.
+
+The portfolio is a single page. Everything below is also on the site.
+
+## Selected work
+
+- [MyCalTrack](https://apps.apple.com/in/app/mycaltrack/id6772485451): Health and fitness app with an AI metabolism coach, Apple Health sync and a game hub. Built with React Native, TypeScript and RevenueCat.
+- [NexBuilder](https://nexbuilder.in): A platform where you describe a website in plain words and it builds it. Built with Next.js, React and TypeScript.
+- TechPiFurious: A gamified classroom where students and teachers meet in one app. Built with React Native.
+- [Sharda EduSangam](https://play.google.com/store/apps/details?id=com.edusangam.app): One Android app connecting students, parents, teachers and tutors. Built with Kotlin and Firebase.
+- [Formative](https://github.com/1-Pankaj/Formative): Open-source desktop workspace for architecture diagrams and agent orchestration. TypeScript.
+- [Devlofy](https://github.com/1-Pankaj/Devlofy): Offline-first command center for solo developers, with a 3D focus garden. TypeScript and SQLite.
+- [Pixel-Pals](https://github.com/1-Pankaj/Pixel-Pals): A pixel companion that lives on top of your windows and follows your cursor. JavaScript.
+
+## Services
+
+- Mobile apps: iPhone and Android apps with smooth motion, notifications, links that open the right screen, and paid subscriptions (React Native, Kotlin, Reanimated).
+- Web products: Fast websites and web apps (Next.js, Node.js, PHP).
+- Backend and launch: Data storage, payments, and getting an app approved and published in the stores (Firebase, RevenueCat, Expo EAS).
+- Design and motion: Interface design, working prototypes and animation.
+
+## Process
+
+1. Discovery: a short call to pin down the goal, the users and the deadline.
+2. Design and prototype: screens with smooth motion and a working prototype.
+3. Build: the app is built for iPhone and Android, or Android only, with the setup behind it.
+4. Launch and support: publishing on the App Store and Google Play, paid plans, and fixes after release.
+
+## Contact
+
+- Email: pankajisrani17@gmail.com
+- [GitHub](https://github.com/1-Pankaj)
+- [LinkedIn](https://www.linkedin.com/in/pankaj-israni-a94708222/)
+- [Instagram](https://instagram.com/idkpankaj)
+- Location: Jodhpur, India. Works with clients worldwide. Booking new projects.
+
+## Frequently asked questions
+
+**Who do you build apps and websites for?**
+For founders, teams and companies, and for classrooms. I have also built products for my own studio, Codeloom.
+
+**Can I hire you as a freelance developer?**
+Yes. I take on new projects for clients worldwide as an independent developer. Email me your goal and timeline and I’ll reply with the best way to get there.
+
+**Do you build for both iPhone and Android?**
+Yes. I build iPhone and Android apps, and some projects are Android only.
+
+**Will you publish the app on the App Store and Google Play?**
+Yes. Publishing on the stores is part of the last step, along with paid plans and fixes after release.
+
+**Which tools do you use?**
+For apps, mostly React Native and Kotlin. For websites, Next.js and Node.js. Firebase stores app data and RevenueCat handles paid subscriptions.
+
+**How long will my project take?**
+It depends on your goal and your deadline. The first step is a short call to work that out together.
+
+**Where are you based, and how do we start?**
+I’m in Jodhpur, India, and I work with clients worldwide. Email me your goal and timeline and I’ll reply with the best way to get there.
+
+## Optional
+
+- [Website](https://1-pankaj.github.io/)
+- [Source code](https://github.com/1-Pankaj/1-pankaj.github.io)
+- [Sitemap](https://1-pankaj.github.io/sitemap.xml)
+
+## About
+
+I’m an app and website developer based in Jodhpur, India. Through my own studio, Codeloom, I work with founders and teams around the world, and I stay with a project from the first call to the App Store and Google Play. I’m available for freelance projects.
+
+Who I help: founders turning an idea into an app or website; teams and companies adding a mobile app or web product; schools and classrooms that need apps connecting students, parents and teachers, like Sharda EduSangam and TechPiFurious.
